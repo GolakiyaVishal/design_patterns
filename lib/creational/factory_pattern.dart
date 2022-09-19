@@ -1,6 +1,7 @@
 enum ShapeType { square, circle, extra }
 
 abstract class Shape {
+  // default factory constructor
   factory Shape(ShapeType type) {
     switch (type) {
       case ShapeType.square:
