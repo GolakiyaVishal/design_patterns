@@ -1,0 +1,12 @@
+name: run the test
+
+on: [push]
+
+jobs: 
+  unit-test: 
+    name: Unit test on ${{ matrix.os }}
+    run-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+  
